@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Herbet Rodrigues — projetos desenvolvidos com apoio de inteligência artificial."
+    />
+    <title>Portfólio — Herbet Rodrigues</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Ir para o conteúdo</a>
+
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__glow ambient__glow--a"></div>
+      <div class="ambient__glow ambient__glow--b"></div>
+      <div class="ambient__glow ambient__glow--c"></div>
+      <div class="ambient__grid"></div>
+      <div class="ambient__orbits">
+        <span class="ambient__orbit ambient__orbit--1"></span>
+        <span class="ambient__orbit ambient__orbit--2"></span>
+        <span class="ambient__orbit ambient__orbit--3"></span>
+      </div>
+      <div class="ambient__3d" id="ambient-3d"></div>
+      <div class="ambient__vignette"></div>
+    </div>
+
+    <header class="site-header" id="topo">
+      <div class="site-header__inner">
+        <a class="logo" href="#inicio">
+          <span class="logo__mark" aria-hidden="true">&lt;/&gt;</span>
+          <span data-field="name">Herbet Rodrigues</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-principal"
+          aria-label="Abrir menu"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <nav class="nav" id="nav-principal" aria-label="Principal">
+          <ul class="nav__list">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#ferramentas">Ferramentas</a></li>
+            <li><a class="nav__cta" href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== INÍCIO ========== -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__stage">
+          <div class="hero__content">
+            <p class="hero__eyebrow">
+              <span class="hero__line" aria-hidden="true"></span>
+              <span data-field="roleLabel">Projetos com apoio de IA</span>
+            </p>
+            <h1 class="hero__title" id="hero-title">
+              Eu sou<br />
+              <span data-field="name">Herbet Rodrigues</span>
+            </h1>
+            <p class="hero__tagline" data-field="tagline">
+              Eu crio soluções digitais com apoio de inteligência artificial.
+            </p>
+            <p class="hero__support" data-field="heroSupporting"></p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projetos">Explorar projetos</a>
+              <a class="btn btn--ghost" href="#contato">Entrar em contato</a>
+            </div>
+          </div>
+
+          <div class="hero__portrait" id="hero-visual">
+            <!-- Foto cutout via JS -->
+          </div>
+
+          <aside class="hero__aside" id="hero-panels" aria-label="Atalhos">
+            <!-- Painéis laterais via JS -->
+          </aside>
+        </div>
+      </section>
+
+      <!-- ========== SOBRE ========== -->
+      <section class="section" id="sobre" aria-labelledby="sobre-title">
+        <div class="section__header">
+          <p class="section__index">01</p>
+          <h2 class="section__title" id="sobre-title">Sobre mim</h2>
+        </div>
+        <div class="about" id="about-content"></div>
+      </section>
+
+      <!-- ========== PROJETOS ========== -->
+      <section class="section" id="projetos" aria-labelledby="projetos-title">
+        <div class="section__header">
+          <p class="section__index">02</p>
+          <h2 class="section__title" id="projetos-title">Projetos</h2>
+          <p class="section__lead">
+            Projetos construídos com apoio de IA — do problema à solução.
+          </p>
+        </div>
+        <div class="projects" id="projects-list"></div>
+      </section>
+
+      <!-- ========== FERRAMENTAS E PROCESSO ========== -->
+      <section
+        class="section"
+        id="ferramentas"
+        aria-labelledby="ferramentas-title"
+      >
+        <div class="section__header">
+          <p class="section__index">03</p>
+          <h2 class="section__title" id="ferramentas-title">
+            Ferramentas e processo
+          </h2>
+        </div>
+        <div id="tools-process"></div>
+      </section>
+
+      <!-- ========== CONTATO ========== -->
+      <section
+        class="section section--contact"
+        id="contato"
+        aria-labelledby="contato-title"
+      >
+        <div class="section__header">
+          <p class="section__index">04</p>
+          <h2 class="section__title" id="contato-title">Contato</h2>
+        </div>
+        <div class="contact" id="contact-content"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p>
+          <span data-field="name">Herbet Rodrigues</span>
+          <span class="site-footer__sep" aria-hidden="true">·</span>
+          Projetos com apoio de IA
+        </p>
+        <a class="site-footer__top" href="#topo">Voltar ao topo</a>
+      </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="js/ambient3d.js"></script>
+  </body>
+</html>
